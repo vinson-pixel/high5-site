@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>High 5 English｜春日井市月見町の英会話教室（子ども〜大人）</title>
+<meta name="description" content="春日井市月見町80の英会話教室 High 5 English。子どもから大人まで少人数。先生・月謝・今入れる曜日をそのまま載せています。体験はLINEか電話で。">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap">
+<style>
+/* v3 2026-09-22: 白×黒×黄1色。写真主導・大きな見出し・2カラム編集レイアウト。カード/角丸/数字タイル/標語は使わない */
+:root{
+  --bg:#fff;--ink:#111;--ink-2:#3a3a3a;--muted:#767676;--line:#111;--line-2:#d9d9d9;
+  --yel:#ffd400;--ph:#ececec;
+  --font:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",sans-serif;
+  --gut:clamp(20px,5vw,72px);
+}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.9;font-feature-settings:"palt"}
+img{max-width:100%;display:block}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+h1,h2,h3{margin:0;font-weight:700;line-height:1.3;letter-spacing:-.01em;overflow-wrap:anywhere;text-wrap:balance}
+p{margin:0 0 1em;max-width:36em}
+.tbc{border-bottom:2px dashed #e0a800;padding:0 2px}
+.mock{font-size:.8rem;padding:6px var(--gut);background:#fff8d6;color:#5a4a00}
+
+/* nav */
+.nav{display:flex;justify-content:space-between;align-items:center;padding:18px var(--gut);border-bottom:1px solid var(--line)}
+.brand{font-weight:900;font-size:1.25rem;letter-spacing:-.02em;text-decoration:none}
+.brand span{background:var(--yel);padding:0 .25em;margin-right:.2em}
+.nav .cta{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;font-size:.9rem;padding:10px 18px;white-space:nowrap}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);min-height:60vh}
+.hero .pic{background:var(--ph);display:grid;place-items:center;color:var(--muted);font-size:.9rem;text-align:center;padding:24px;box-sizing:border-box}
+.hero .pic img{width:100%;height:100%;object-fit:cover}
+.hero .txt{padding:clamp(32px,6vw,80px) var(--gut);display:flex;flex-direction:column;justify-content:flex-end;gap:20px}
+.hero h1{font-size:clamp(2.1rem,3.8vw,3.4rem);font-weight:900;line-height:1.15}
+.hero h1 mark{background:linear-gradient(transparent 62%,var(--yel) 62%)}
+.hero .sub{font-size:1.05rem;color:var(--ink-2)}
+.hero .meta{display:flex;gap:24px;flex-wrap:wrap;font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin:0}
+
+/* sections: label left / content right */
+.sec{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:24px var(--gut);padding:clamp(48px,7vw,96px) var(--gut);border-top:1px solid var(--line)}
+.sec h2{font-size:clamp(1.6rem,3vw,2.4rem);font-weight:900;position:sticky;top:20px}
+.sec h2 small{display:block;font-size:.8rem;font-weight:500;color:var(--muted);letter-spacing:.08em;margin-top:6px}
+
+/* teacher */
+.teacher{display:grid;grid-template-columns:minmax(0,180px) minmax(0,1fr);gap:24px;align-items:start}
+.teacher .pic{aspect-ratio:3/4;background:var(--ph);display:grid;place-items:center;color:var(--muted);font-size:.85rem}
+.teacher .name{font-size:1.4rem;font-weight:900;margin-bottom:6px}
+
+/* slots */
+.slots{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.slots li{display:grid;grid-template-columns:3em minmax(0,1fr) minmax(0,1fr) auto;gap:16px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line-2);font-variant-numeric:tabular-nums}
+.slots .d{font-weight:900;font-size:1.3rem}
+.slots .t{white-space:nowrap}
+.slots .n{font-weight:700;white-space:nowrap}
+.slots .n::before{content:"";display:inline-block;width:.6em;height:.6em;background:var(--yel);margin-right:.4em}
+
+/* price */
+.price{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.price li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 0;border-bottom:1px solid var(--line-2)}
+.price b{font-size:1.05rem}
+.price small{display:block;color:var(--muted);font-weight:400;font-size:.85rem}
+.price .yen{font-size:1.7rem;font-weight:900;white-space:nowrap;font-variant-numeric:tabular-nums}
+.price .yen i{font-style:normal;font-size:.8rem;font-weight:500;color:var(--muted)}
+.fine{font-size:.9rem;color:var(--ink-2);margin-top:16px;padding-left:1.2em}
+.fine li{margin-bottom:4px}
+
+/* trial */
+.trial{background:var(--yel)}
+.trial .sec{border-top:0}
+.ways{list-style:none;margin:0;padding:0}
+.ways li{display:flex;gap:16px;align-items:baseline;padding:14px 0;border-top:1px solid rgba(0,0,0,.25)}
+.ways b{min-width:5em;font-weight:900}
+.ways a{font-weight:700}
+.trial .big{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;font-weight:900;font-size:1.1rem;padding:16px 28px;margin-top:8px}
+
+/* place */
+address{font-style:normal;font-size:1.1rem;font-weight:700}
+.map{display:block;width:100%;aspect-ratio:16/9;border:0;background:var(--ph)}
+
+footer{padding:40px var(--gut) 110px;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+.sticky{position:fixed;left:0;right:0;bottom:0;display:none;gap:1px;background:var(--line)}
+.sticky a{flex:1;text-align:center;background:#fff;text-decoration:none;font-weight:900;padding:16px 8px;padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+.sticky a.y{background:var(--yel)}
+
+@media (max-width:760px){
+  .hero{grid-template-columns:minmax(0,1fr);min-height:0}
+  .hero .pic{aspect-ratio:4/3}
+  .sec{grid-template-columns:minmax(0,1fr);gap:16px}
+  .sec h2{position:static}
+  .teacher{grid-template-columns:minmax(0,120px) minmax(0,1fr);gap:16px}
+  .slots li{grid-template-columns:2.6em minmax(0,1fr) auto;gap:10px}
+  .slots .c{grid-column:2 / -1;font-size:.9rem;color:var(--ink-2)}
+  .nav .cta{display:none}
+  .sticky{display:flex}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="mock">試作。<span class="tbc">黄色の点線</span>は先生に確認して差し替える箇所。写真はグレーの枠に入れます。</div>
+
+<nav class="nav" aria-label="メイン">
+  <a class="brand" href="#"><span>High 5</span>English</a>
+  <a class="cta" href="#trial">無料体験を申し込む</a>
+</nav>
+
+<header class="hero">
+  <div class="pic" role="img" aria-label="教室の写真（差し替え）">教室かレッスン中の写真<br>（横長・明るいもの）</div>
+  <div class="txt">
+    <h1>春日井・月見町で、<br><mark>英語を話す</mark>教室。</h1>
+    <p class="sub">子どもから大人まで、少人数で。先生は一人、担当は変わりません。今入れる曜日と月謝はこの下にそのまま載せています。</p>
+    <p class="meta"><span>春日井市月見町80</span><span>子ども〜大人</span><span>2026年9月 募集中</span></p>
+  </div>
+</header>
+
+<main>
+<section class="sec" id="teacher">
+  <h2>先生<small>TEACHER</small></h2>
+  <div class="teacher">
+    <div class="pic" role="img" aria-label="先生の写真（差し替え）">先生の写真</div>
+    <div>
+      <p class="name"><span class="tbc">先生のお名前</span></p>
+      <p><span class="tbc">出身、英語歴、この教室を始めた年、教えて何年になるか。「こういう教室にしたい」を一言。3〜4行、先生の言葉のまま。</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="schedule">
+  <h2>今、入れる曜日<small>OPEN SEATS</small></h2>
+  <div>
+    <p>今月の時間割のうち、席が空いているところだけです。埋まると消えます。</p>
+    <ul class="slots" id="slotRows">
+      <li><span class="d">火</span><span class="t">16:00〜16:50</span><span class="c">小学生 <span class="tbc">例</span></span><span class="n">あと2席</span></li>
+      <li><span class="d">水</span><span class="t">19:00〜20:00</span><span class="c">大人 <span class="tbc">例</span></span><span class="n">あと3席</span></li>
+      <li><span class="d">土</span><span class="t">10:00〜10:50</span><span class="c">幼児 <span class="tbc">例</span></span><span class="n">あと1席</span></li>
+    </ul>
+    <p style="margin-top:16px;font-size:.9rem;color:var(--ink-2)">表にない曜日・時間はご相談ください。人数がそろえば新しいクラスを開くことがあります。</p>
+  </div>
+</section>
+
+<section class="sec" id="price">
+  <h2>月謝<small>PRICE · 税込</small></h2>
+  <div>
+    <ul class="price">
+      <li><b>幼児・小学生<small>週1回 50分 <span class="tbc">要確認</span></small></b><span class="yen">¥<span class="tbc">　　</span><i>/月</i></span></li>
+      <li><b>中学生・高校生<small>週1回 60分 <span class="tbc">要確認</span></small></b><span class="yen">¥<span class="tbc">　　</span><i>/月</i></span></li>
+      <li><b>大人<small>週1回 60分 <span class="tbc">要確認</span></small></b><span class="yen">¥<span class="tbc">　　</span><i>/月</i></span></li>
+    </ul>
+    <ul class="fine">
+      <li>入会金・教材費・年会費：<span class="tbc">あり／なし、金額</span></li>
+      <li>お休みした回の振替：<span class="tbc">できる／できない、条件</span></li>
+      <li>ごきょうだい：<span class="tbc">割引の有無</span></li>
+      <li>1クラス <span class="tbc">最大◯人</span>。教材 <span class="tbc">名前</span>。英検 <span class="tbc">対応の有無</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="referral">
+  <h2>紹介で来られた方へ<small>REFERRAL</small></h2>
+  <div>
+    <p>この教室は、通っている方の紹介で入られる方がほとんどです。体験のときに「◯◯さんから聞きました」と言ってください。</p>
+    <p><span class="tbc">紹介特典があれば書く（例：紹介した方・された方それぞれ初月◯円引き）。なければこの段落は消す。</span></p>
+  </div>
+</section>
+
+<div class="trial" id="trial">
+<section class="sec">
+  <h2>無料体験<small>TRIAL LESSON</small></h2>
+  <div>
+    <p>いつものクラスにそのまま入ってもらいます。持ち物はいりません。終わったあと、月謝と入れる曜日をお伝えするだけで、その場で決めなくて大丈夫です。</p>
+    <ul class="ways">
+      <li><b>LINE</b><span><a id="lineBtn" href="#" target="_blank" rel="noopener">友だち追加して「体験希望」と送る</a> <span class="tbc">URL要確認</span></span></li>
+      <li><b>電話</b><span><a id="telBtn" href="tel:">0568-<span class="tbc">要確認</span></a>　レッスン中は出られません。折り返します。</span></li>
+      <li><b>フォーム</b><span><a id="formBtn" href="#" target="_blank" rel="noopener">申込フォーム</a> <span class="tbc">Googleフォーム作成後にURL</span></span></li>
+    </ul>
+    <a class="big" id="lineBig" href="#" target="_blank" rel="noopener">LINEで体験を申し込む</a>
+  </div>
+</section>
+</div>
+
+<section class="sec" id="place">
+  <h2>場所<small>ACCESS</small></h2>
+  <div>
+    <address>〒486-0835 愛知県春日井市月見町80 東雲B1</address>
+    <p style="font-size:.9rem;color:var(--ink-2)"><span class="tbc">最寄りからの行き方（例：JR春日井駅から徒歩16分／◯◯の角を曲がって…）・駐車場◯台・自転車置き場</span></p>
+    <iframe class="map" title="地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=%E6%84%9B%E7%9F%A5%E7%9C%8C%E6%98%A5%E6%97%A5%E4%BA%95%E5%B8%82%E6%9C%88%E8%A6%8B%E7%94%BA80&output=embed"></iframe>
+  </div>
+</section>
+</main>
+
+<footer>
+  <span>High 5 English／英会話教室ハイファイブ イングリッシュ</span>
+  <span>春日井市月見町80 東雲B1</span>
+</footer>
+
+<div class="sticky">
+  <a href="tel:">電話</a>
+  <a class="y" href="#trial">無料体験</a>
+</div>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LanguageSchool","name":"英会話教室ハイファイブ イングリッシュ","alternateName":"High 5 English",
+ "address":{"@type":"PostalAddress","streetAddress":"月見町80 東雲B1","addressLocality":"春日井市","addressRegion":"愛知県","postalCode":"486-0835","addressCountry":"JP"},
+ "areaServed":"春日井市","description":"春日井市月見町の英会話教室。子どもから大人まで少人数制。"}
+</script>
+<script>
+// 空き枠：Googleスプレッドシート「ファイル＞共有＞ウェブに公開＞CSV」のURLを入れると #slotRows が置き換わる。
+// 列＝ 曜日 | 時間 | クラス | 空き（1行目は見出し）。空きが空欄の行は出さない。未設定ならサンプル行のまま。
+(function(){
+  var SHEET_CSV='';
+  if(!SHEET_CSV) return;
+  fetch(SHEET_CSV).then(function(r){return r.text()}).then(function(t){
+    var rows=t.trim().split(/\r?\n/).slice(1).map(function(l){
+      return (l.match(/("([^"]|"")*"|[^,]*)(,|$)/g)||[]).slice(0,4).map(function(c){return c.replace(/,$/,'').replace(/^"|"$/g,'').replace(/""/g,'"').trim()});
+    }).filter(function(c){return c[0]&&c[1]&&c[3]});
+    var esc=function(v){return String(v).replace(/[&<>]/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[m]})};
+    document.getElementById('slotRows').innerHTML=rows.length?rows.map(function(c){return '<li><span class="d">'+esc(c[0])+'</span><span class="t">'+esc(c[1])+'</span><span class="c">'+esc(c[2])+'</span><span class="n">'+esc(c[3])+'</span></li>'}).join('')
+      :'<li><span class="c" style="grid-column:1/-1">今月は満席です。空きが出たらここに載せます。</span></li>';
+  }).catch(function(){});
+})();
+</script>
+</body>
+</html>
