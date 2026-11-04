@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vinson-pixel.github.io/high5-site/sitemap.xml
